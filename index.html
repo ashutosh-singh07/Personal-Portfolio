@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/6a644d91d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Ashutosh</span><br>Singh</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Ambitious Software Developer Intern proficient in [JavaScript, HTML, CSS,TypeScript, Git, and SQL]. Experienced in the full software development lifecycle through rigorous academic coursework and collaborative group projects. Fast learner with excellent communication skills, dedicated to supporting agile teams and driving project success</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>JavaScript, TypeScript, HTML5, CSS3</li>
+                            <li><span>Frontend</span><br>React.js, Next.js, Tailwind CSS, Bootstrap</li>
+                            <li><span>Database</span><br>MYSQL, SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech in AIML from MCKV Institute of Engineering</li>
+                            <li><span>2020</span><br>Class XII from MP & EV ENGLISH MEDIUM SCHOOL GAJUWAKA VIZAG AP</li>
+                            <li><span>2017</span><br>Class X from Ratnakar North Point </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tools">
+        <div class="container">
+            <h1 class="sub-title">Tools</h1>
+            <div class="tools-list">
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>Git</h2>
+                    <p>It is used as a free and open-source distributed version control system (DVCS) that tracks changes in files (typically source code) over time, enabling efficient collaboration among developers and ensuring project integrity.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Git Hub</h2>
+                    <p>It is a web-based platform primarily used for hosting and managing projects using Git, a version control system.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>VS Code</h2>
+                    <p>I use for its to combines the lightweight feel of a source code editor with the powerful features typically found in a full Integrated Development Environment (IDE).</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Built a responsive Social Media App using HTML, CSS, React, and Bootstrap where users can create posts, browse feeds, and interact with content.</p>
+                        <a href="https://github.com/ashutosh-singh07/Social-Media"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Developed a Calculator App using HTML, CSS, React, and Bootstrap to perform basic arithmetic calculations with a simple and responsive design.</p>
+                        <a href="https://github.com/ashutosh-singh07/Calculator"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png">
+                    <div class="layer">
+                        <h3>Stone Paper Scissors</h3>
+                        <p>Developed a Stone Paper Scissors Game using HTML, CSS, React, and Bootstrap that allows users to play against the computer in a responsive and user-friendly interface.</p>
+                        <a href="https://github.com/ashutosh-singh07/Stone-Paper-Scissors"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> ashutoshsingh26091@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7003345624</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/ashutosh-singh-557461295/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/chiku_singh984?igsh=MWtldGdkNmducW8xOQ==&utm_source=ig_contact_invite"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="YOUR_FORM_NAME">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Ashutosh</p>
+        </div>
+    </div>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwQw1JeVf1gIbPYlgLImqLOwLH9NAJRenFmHVz4m6E-W7j1iAwduOg1OzeFpcoIwJbK8A/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout (function (){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
